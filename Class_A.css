@@ -1,0 +1,14 @@
+body {
+	font-style: italic;
+	text-align: center;
+}
+p {
+	color: black;
+	background: gold;
+	text-align: center;
+	font-size: large;
+	font-style: bold;
+}
+.Class_A {
+	color: pink;
+}
