@@ -3,13 +3,15 @@
 	<head>
 		<title>Zoo Animals | List</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<link rel="stylesheet" href="./CSS/one_page_animations.css">
 	</head>
 	<body>
 		
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery" id="link"><li>GALLERY</li></a>
 					<a href="#contact" id="link"><li>DESCRIPTION</li></a>
@@ -20,9 +22,9 @@
 		
 		<!-- HOME -->
 		<div id="home">
-			<div>
-				<div>
-					<span>The Animals of the Zoo</span>
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">The Animals of the Zoo</span>
 				</div>
 			</div>
 		</div>
@@ -31,105 +33,115 @@
 		<!-- GALLERY -->
 		<section>
 			<div id="gallery">
-				<h1>Gallery</h1>
-				<div>
+				<div class="container">
+					<h1>Gallery</h1>
+					<div class="flex-container">
+
+						<!-- VIDEO CONTAINER 1 -->
+						<div class="video-container">
+							<div class="video">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/SkH92yd6lZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+							</div>
+						</div>
+						<!-- END VIDEO-CONTAINER 1 -->
 				
-					<!-- PHOTO CONTAINER 1 -->
-					<div>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/SkH92yd6lZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
-						<div>
-							<img src="./Images/elephant.png" width=320 height=240 alt="Elephant">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Here we have a picture of an Elephant</p>
+						<!-- PHOTO CONTAINER 1 -->
+						<div class="photo-container">
+							<div class="photo">
+								<img src="./Images/elephant.png" alt="Elephant">
+								<div class="photo-overlay">
+									<h3 class="white-head">Click to Enlarge</h3>
+									<p>Here we have a picture of an Elephant</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER -->
+						<!-- END PHOTO-CONTAINER 1 -->
+
+						<!-- PHOTO CONTAINER 2 -->
+						<div class="photo-container">	
+							<div class="photo">
+								<img src="./Images/Giraffe.png" alt="Giraffe">
+								<div class="photo-overlay">
+									<h3 class="white-head">Click to Enlarge</h3>
+									<p>Here we have a picture of an Elephant</p>
+								</div>
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 2 -->
+
+						<!-- PHOTO CONTAINER 3 -->
+						<div class="photo-container">	
+							<div class="photo">
+								<img src="./Images/Lion.png" alt="Lion">
+								<div class="photo-overlay">
+									<h3 class="white-head">Click to Enlarge</h3>
+									<p>Here we have a picture of an Elephant</p>
+								</div>
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 3 -->
+
+						<!-- PHOTO CONTAINER 4 -->
+						<div class="photo-container">	
+							<div class="photo">
+								<img src="./Images/Monkey.png" alt="Monkey">
+								<div class="photo-overlay">
+									<h3 class="white-head">Click to Enlarge</h3>
+									<p>Here we have a picture of an Elephant</p>
+								</div>
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 4 -->
+
+						<!-- PHOTO CONTAINER 5 -->
+						<div class="photo-container">	
+							<div class="photo">
+								<img src="./Images/Panda.png" alt="Panda">
+								<div class="photo-overlay">
+									<h3 class="white-head">Click to Enlarge</h3>
+									<p>Here we have a picture of an Elephant</p>
+								</div>
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 5 -->
+
+						<!-- PHOTO CONTAINER 6 -->
+						<div class="photo-container">	
+							<div class="photo">
+								<img src="./Images/polar_bear.png" alt="Polar Bear">
+								<div class="photo-overlay">
+									<h3 class="white-head">Click to Enlarge</h3>
+									<p>Here we have a picture of an Elephant</p>
+								</div>
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 6 -->
+
+						<!-- PHOTO CONTAINER 7 -->
+						<div class="photo-container">	
+							<div class="photo">
+								<img src="./Images/Rhino.png" alt="Rhinocerus">
+								<div class="photo-overlay">
+									<h3 class="white-head">Click to Enlarge</h3>
+									<p>Here we have a picture of an Elephant</p>
+								</div>
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 7 -->
+
+						<!-- PHOTO CONTAINER 8 -->
+						<div class="photo-container">	
+							<div class="photo">
+								<img src="./Images/Tiger.png" alt="Tiger">
+								<div class="photo-overlay">
+									<h3 class="white-head">Click to Enlarge</h3>
+									<p>Here we have a picture of an Elephant</p>
+								</div>
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 8 -->
 					
-					<!-- PHOTO CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./Images/Giraffe.png" width=320 height=240 alt="Giraffe">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Here we have a picture of a Giraffe</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER -->
-					
-					<!-- PHOTO CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./Images/Lion.png" width=320 height=240 alt="Lion">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Here we have a picture of a Lion</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER -->
-					
-					<!-- PHOTO CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./Images/Monkey.png" width=320 height=240 alt="Monkey">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Here we have a picture of a Monkey</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER -->
-					
-					<!-- PHOTO CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="./Images/Panda.png" width=320 height=240 alt="Panda">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Here we have a picture of a Panda</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER -->
-					
-					<!-- PHOTO CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="./Images/polar_bear.png" width=320 height=240 alt="Polar Bear">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Here we have a picture of a Polar Bear</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER -->
-					
-					<!-- PHOTO CONTAINER 7 -->
-					<div>
-						<div>
-							<img src="./Images/Rhino.png" width=320 height=240 alt="Rhino">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Here we have a pitcure of a Rhinoceros</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER -->
-					
-					<!-- PHOTO CONTAINER 8 -->
-					<div>
-						<div>
-							<img src="./Images/Tiger.png" width=320 height=240 alt="Tiger">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>Here we have a picture of a Tiger</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER -->
+						
 					
 					
 				</div>
@@ -138,18 +150,18 @@
 		<!-- END GALLERY -->
 
 		<!-- RSVP -->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Zoo Information</h1>
-					<div>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Zoo Information</h1>
+					<div class="reservation">
 						<h2><span>Zoo Owner</span>
 							<br />-Zachery Richmond
 						</h2>
-						<p>
+						<p class="rsvp-text">
 							Please provide us with your basic contact information to recieve additional details about the zoo.
 						</p>
-						<div>
+						<div class="form-rsvp">
 							<form action="" method="post">
 								<input class="rsvp" type="text" value="First Name">
 								<input class="rsvp" type="text" value="Last Name">
@@ -158,7 +170,7 @@
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
+								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
 							</form>
@@ -170,7 +182,7 @@
 		<!-- END RSVP -->
 		
 		<!-- FOOTER -->
-		<div>
+		<div id="footer">
 			www.myzoo.org &nbsp;|&nbsp; &copy; 2020
 		</div>
 		<!-- END FOOTER -->
