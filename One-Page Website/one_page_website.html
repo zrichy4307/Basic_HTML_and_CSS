@@ -3,6 +3,7 @@
 	<head>
 		<title>Zoo Animals | List</title>
 		<meta charset="utf-8">
+		<script src="./Java/One_Page_Website.js" defer></script>
 		<link rel="stylesheet" href="./CSS/one_page_website.css">
 		<link rel="stylesheet" href="./CSS/one_page_animations.css">
 	</head>
@@ -33,121 +34,151 @@
 		<!-- GALLERY -->
 		<section>
 			<div id="gallery">
+				<!-- VIDEO CONTAINER 1 -->
+				<div class="video-container">
+					<div class="video">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/SkH92yd6lZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+					</div>
+				</div>
+				<!-- END VIDEO-CONTAINER 1 -->
 				<div class="container">
 					<h1>Gallery</h1>
 					<div class="flex-container">
 
-						<!-- VIDEO CONTAINER 1 -->
-						<div class="video-container">
-							<div class="video">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/SkH92yd6lZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
-							</div>
-						</div>
-						<!-- END VIDEO-CONTAINER 1 -->
-				
-						<!-- PHOTO CONTAINER 1 -->
-						<div class="photo-container">
-							<div class="photo">
-								<img src="./Images/elephant.png" alt="Elephant">
-								<div class="photo-overlay">
-									<h3 class="white-head">Click to Enlarge</h3>
-									<p>Here we have a picture of an Elephant</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO-CONTAINER 1 -->
-
-						<!-- PHOTO CONTAINER 2 -->
-						<div class="photo-container">	
-							<div class="photo">
-								<img src="./Images/Giraffe.png" alt="Giraffe">
-								<div class="photo-overlay">
-									<h3 class="white-head">Click to Enlarge</h3>
-									<p>Here we have a picture of an Elephant</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO-CONTAINER 2 -->
-
-						<!-- PHOTO CONTAINER 3 -->
-						<div class="photo-container">	
-							<div class="photo">
-								<img src="./Images/Lion.png" alt="Lion">
-								<div class="photo-overlay">
-									<h3 class="white-head">Click to Enlarge</h3>
-									<p>Here we have a picture of an Elephant</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO-CONTAINER 3 -->
-
-						<!-- PHOTO CONTAINER 4 -->
-						<div class="photo-container">	
-							<div class="photo">
-								<img src="./Images/Monkey.png" alt="Monkey">
-								<div class="photo-overlay">
-									<h3 class="white-head">Click to Enlarge</h3>
-									<p>Here we have a picture of an Elephant</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO-CONTAINER 4 -->
-
-						<!-- PHOTO CONTAINER 5 -->
-						<div class="photo-container">	
-							<div class="photo">
-								<img src="./Images/Panda.png" alt="Panda">
-								<div class="photo-overlay">
-									<h3 class="white-head">Click to Enlarge</h3>
-									<p>Here we have a picture of an Elephant</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO-CONTAINER 5 -->
-
-						<!-- PHOTO CONTAINER 6 -->
-						<div class="photo-container">	
-							<div class="photo">
-								<img src="./Images/polar_bear.png" alt="Polar Bear">
-								<div class="photo-overlay">
-									<h3 class="white-head">Click to Enlarge</h3>
-									<p>Here we have a picture of an Elephant</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO-CONTAINER 6 -->
-
-						<!-- PHOTO CONTAINER 7 -->
-						<div class="photo-container">	
-							<div class="photo">
-								<img src="./Images/Rhino.png" alt="Rhinocerus">
-								<div class="photo-overlay">
-									<h3 class="white-head">Click to Enlarge</h3>
-									<p>Here we have a picture of an Elephant</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO-CONTAINER 7 -->
-
-						<!-- PHOTO CONTAINER 8 -->
-						<div class="photo-container">	
-							<div class="photo">
-								<img src="./Images/Tiger.png" alt="Tiger">
-								<div class="photo-overlay">
-									<h3 class="white-head">Click to Enlarge</h3>
-									<p>Here we have a picture of an Elephant</p>
-								</div>
-							</div>
-						</div>
-						<!-- END PHOTO-CONTAINER 8 -->
-					
 						
-					
-					
+				
+						<!-- Images used to open the lightbox -->
+						<div class="picture-container">
+							<div class="picture">
+								<img src="./Images/elephant.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+							</div>
+
+							<div class="picture">
+								<img src="./Images/Giraffe.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+							</div>
+
+							<div class="picture">
+								<img src="./Images/Lion.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+							</div>
+
+							<div class="picture">
+								<img src="./Images/Monkey.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+							</div>
+
+							<div class="picture">
+								<img src="./Images/Panda.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+							</div>
+
+							<div class="picture">
+								<img src="./Images/polar_bear.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+							</div>
+
+							<div class="picture">
+								<img src="./Images/Rhino.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+							</div>
+
+							<div class="picture">
+								<img src="./Images/Tiger.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
+							</div>
+						</div>
+						
+						<!-- The Modal/Lightbox -->
+						<div id="myModal" class="modal">
+							<span class="close" onclick="closeModal()">&times;</span>
+								<div class="modal-content">
+						
+									<div class="mySlides">
+										<div class="numbertext">1 / 8</div>
+											<img src="./Images/elephant.png" style="width:100%">
+									</div>
+						
+									<div class="mySlides">
+										<div class="numbertext">2 / 8</div>
+											<img src="./Images/Giraffe.png" style="width:100%">
+									</div>
+								
+									<div class="mySlides">
+										<div class="numbertext">3 / 8</div>
+											<img src="./Images/Lion.png" style="width:100%">
+									</div>
+								
+									<div class="mySlides">
+										<div class="numbertext">4 / 8</div>
+											<img src="./Images/Monkey.png" style="width:100%">
+									</div>
+
+									<div class="mySlides">
+										<div class="numbertext">5 / 8</div>
+											<img src="./Images/Panda.png" style="width:100%">
+									</div>
+
+									<div class="mySlides">
+										<div class="numbertext">6 / 8</div>
+											<img src="./Images/polar_bear.png" style="width:100%">
+									</div>
+
+									<div class="mySlides">
+										<div class="numbertext">7 / 8</div>
+											<img src="./Images/Rhino.png" style="width:100%">
+									</div>
+
+									<div class="mySlides">
+										<div class="numbertext">8 / 8</div>
+											<img src="./Images/Tiger.png" style="width:100%">
+									</div>
+						
+							<!-- Next/previous controls -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						
+							<!-- Caption text -->
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+						
+							<!-- Thumbnail image controls -->
+							<div class="picture">
+								<img class="demo" src="./Images/elephant.png" onclick="currentSlide(1)" alt="Elephant">
+							</div>
+						
+							<div class="picture">
+								<img class="demo" src="./Images/Giraffe.png" onclick="currentSlide(2)" alt="Giraffe">
+							</div>
+						
+							<div class="picture">
+								<img class="demo" src="./Images/Lion.png" onclick="currentSlide(3)" alt="Lion">
+							</div>
+						
+							<div class="picture">
+								<img class="demo" src="./Images/Monkey.png" onclick="currentSlide(4)" alt="Monkey">
+							</div>
+
+							<div class="picture">
+								<img class="demo" src="./Images/Panda.png" onclick="currentSlide(5)" alt="Panda">
+							</div>
+
+							<div class="picture">
+								<img class="demo" src="./Images/polar_bear.png" onclick="currentSlide(6)" alt="Polar Bear">
+							</div>
+
+							<div class="picture">
+								<img class="demo" src="./Images/Rhino.png" onclick="currentSlide(7)" alt="Rhino">
+							</div>
+
+							<div class="picture">
+								<img class="demo" src="./Images/Tiger.png" onclick="currentSlide(8)" alt="Tiger">
+							</div>
+						</div>
+					</div> 
 				</div>
 			</div>
-		</section>
-		<!-- END GALLERY -->
+		</section>			
+		<!-- END GALLERY -->		
+		
+								
+					
+					
+				
 
 		<!-- RSVP -->
 		<section id="contact">
